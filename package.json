@@ -19,7 +19,7 @@
     "bluebird": "^3.5.1",
     "eslint-plugin-jest": "21.12.1",
     "jest": "22.1.4",
-    "standard": "10.x"
+    "standard": "10.0.3"
   },
   "engines": {
     "node": ">=4.3"
