@@ -1,0 +1,71 @@
+{
+  "name": "sqsumer",
+  "version": "1.0.0",
+  "description": "Worker to consume AWS SQS messages, built with Serverless and AWS Lambda in mind",
+  "scripts": {
+    "test": "./node_modules/.bin/jest",
+    "format": "./node_modules/.bin/standard --fix",
+    "lint-code": "./node_modules/.bin/standard && echo lint: code is good",
+    "lint-unit": "./node_modules/.bin/eslint \"**/*.test.js\" \"test/**/*.js\" --color --config test/.eslintrc.js && echo lint: unit tests ok",
+    "lint": "npm run lint-code && npm run lint-unit",
+    "pretest": "npm run lint"
+  },
+  "peerDependencies": {
+    "aws-sdk": ">=2.3.0",
+    "bluebird": ">=3.4.4"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.194.0",
+    "bluebird": "^3.5.1",
+    "eslint-plugin-jest": "21.12.1",
+    "jest": "22.1.4",
+    "standard": "10.x"
+  },
+  "engines": {
+    "node": ">=4.3"
+  },
+  "standard": {
+    "ignore": [
+      "*.test.js"
+    ]
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "tools_output/unit-coverage",
+    "coverageReporters": [
+      "html"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalmaas/sqsumer.git"
+  },
+  "keywords": [
+    "digitalmaas",
+    "aws",
+    "aws-sqs",
+    "sqs",
+    "sqs-queue",
+    "worker",
+    "consumer",
+    "queue",
+    "javascript",
+    "nodejs",
+    "node-js",
+    "lambda",
+    "aws-lambda",
+    "serverless",
+    "serverless-framework"
+  ],
+  "contributors": [
+    "Ricardo Nolde <ricardo@digitalmaas.com>",
+    "Sebastian Müller <mail@sbstjn.com>"
+  ],
+  "author": "DigitalMaas Developers <developers@digitalmaas.com>",
+  "main": "lib/Sqsumer.js",
+  "license": "SEE LICENSE IN ./LICENSE",
+  "homepage": "https://github.com/digitalmaas/sqsumer#readme"
+}

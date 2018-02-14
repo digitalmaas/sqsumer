@@ -1,0 +1,6 @@
+.*
+npm-debug.log*
+circle.yml
+node_modules/
+test/
+**/*.test.js
