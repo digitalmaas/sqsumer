@@ -1,6 +1,6 @@
 {
   "name": "sqsumer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Worker to consume AWS SQS messages, built with Serverless and AWS Lambda in mind",
   "scripts": {
     "test": "./node_modules/.bin/jest",
@@ -58,14 +58,18 @@
     "lambda",
     "aws-lambda",
     "serverless",
-    "serverless-framework"
+    "serverless-framework",
+    "lawos",
+    "async-await",
+    "promises",
+    "bluebird"
   ],
   "contributors": [
-    "Ricardo Nolde <ricardo@digitalmaas.com>",
+    "Ricardo Nolde <ricardo@nolde.com>",
     "Sebastian Müller <mail@sbstjn.com>"
   ],
   "author": "DigitalMaas Developers <developers@digitalmaas.com>",
   "main": "lib/Sqsumer.js",
-  "license": "SEE LICENSE IN ./LICENSE",
+  "license": "MIT",
   "homepage": "https://github.com/digitalmaas/sqsumer#readme"
 }
